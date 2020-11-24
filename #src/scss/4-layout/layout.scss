@@ -22,12 +22,9 @@
 }
 
 .row {
-    margin-left: -15px;
-    margin-right: -15px;
+   display: grid;
 }
 
 .column {
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
+    
 }

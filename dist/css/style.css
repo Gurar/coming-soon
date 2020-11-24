@@ -6543,14 +6543,7 @@ body {
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.column {
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
+  display: grid;
 }
 
 h1 {
