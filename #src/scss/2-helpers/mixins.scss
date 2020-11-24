@@ -1,0 +1,45 @@
+@mixin image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+$breakpoints: (
+	xvs: 280px,
+	vs:	320px,
+	xs: 576px,
+	sm: 768px,
+	md: 992px,
+	lg: 1200px,
+	xl: 1400px
+);
+
+@mixin breakpoint($size){
+	$breakpoint-value: map-get($breakpoints, $size);
+
+	@media screen and (min-width: $breakpoint-value) {
+		@content	}
+	
+}
+
+@mixin breakpointBetween($lower, $upper) {
+	$lower-breakpoint: map-get($breakpoints, $lower);
+	$upper-breakpoint: map-get($breakpoints, $upper);
+
+	@media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+		@content;
+	}
+}
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+}
