@@ -1,0 +1,30 @@
+//1 - TOOLS
+@import '1-tools/_normalize'; 
+//font awesome
+// @import '1-tools/fontawesome/fontawesome';
+// @import '1-tools/fontawesome/solid';
+// @import '1-tools/fontawesome/brands';
+// @import '1-tools/fontawesome/regular';
+
+//2 - HELPERS
+@import '2-helpers/_variables';
+@import '2-helpers/_mixins';
+
+//3 - BASICS
+@import '3-basic/_basic';
+
+//4 - LAYOUT
+@import '4-layout/_layout';
+
+//5 - MODULES
+@import '5-componets/full-screen';
+//6 - PAGE 
+@import '6-page/_index';
+
+
+
+
+
+
+
+
