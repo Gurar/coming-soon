@@ -1,0 +1,27 @@
+.intro {
+    min-height: 100vh;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    &__headline {
+        font-size: 3.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__subheadline {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+
+}
