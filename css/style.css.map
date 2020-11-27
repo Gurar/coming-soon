@@ -7,7 +7,7 @@
         "../#scss/2-helpers/_variables.scss",
         "../#scss/2-helpers/_mixins.scss",
         "../#scss/3-basic/_basic.scss",
-        "../#scss/3-basic/btn/btn.scss",
+        "../#scss/3-basic/btn/_btn.scss",
         "../#scss/4-layout/_layout.scss",
         "../#scss/5-componets/_full-screen.scss",
         "../#scss/5-componets/logo/_logo.scss",

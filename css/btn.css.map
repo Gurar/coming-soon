@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../#scss/5-componets/btn/btn.scss"
-    ],
-    "names": [],
-    "file": "btn.css"
-}
