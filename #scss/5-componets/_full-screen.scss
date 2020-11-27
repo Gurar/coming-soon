@@ -2,7 +2,10 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(42deg, rgba(63,94,251,1) 10%, rgba(153,83,183,1) 59%, rgba(252,70,107,1) 100%);
     &__bg {
         @include image-bg;
+        opacity: 0.3;
+        filter: blur(7px);
     }
 }

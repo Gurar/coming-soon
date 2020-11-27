@@ -358,11 +358,19 @@ html {
 }
 
 body {
+  font-family: 'Baloo 2', cursive;
   font-size: 1rem;
 }
 
 .wrapper {
   min-height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #000;
+  background-color: transparent;
 }
 
 .container {
@@ -417,6 +425,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: linear-gradient(42deg, #3f5efb 10%, #9953b7 59%, #fc466b 100%);
 }
 
 .full-screen__bg {
@@ -427,5 +436,44 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.3;
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+}
+
+.intro {
+  min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.intro__headline {
+  font-size: 3.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.intro__subheadline {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */

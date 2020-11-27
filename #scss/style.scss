@@ -12,12 +12,14 @@
 
 //3 - BASICS
 @import '3-basic/_basic';
+@import '3-basic/btn/_btn';
 
 //4 - LAYOUT
 @import '4-layout/_layout';
 
 //5 - MODULES
 @import '5-componets/full-screen';
+@import '5-componets/logo/logo';
 //6 - PAGE 
 @import '6-page/_index';
 
