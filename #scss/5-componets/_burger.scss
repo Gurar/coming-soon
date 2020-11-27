@@ -1,0 +1,96 @@
+$burgerColor: #fff;
+$burgerCloseColor: #fff;
+$burgerBackground: transparent;
+
+.burger {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 52px;
+	height: 52px;
+	font-size: 0;
+	cursor: pointer;
+	border: 1px solid #f3bd00;
+    z-index: 999;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+    &:focus {
+        outline: none;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 13px;
+        right: 13px;
+        height: 2px;
+        background: $burgerColor;
+
+        &::before,
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $burgerColor;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            bottom: -8px;
+        }
+    }
+
+    &-line {
+        background: $burgerBackground;
+
+        span {
+            transition: background 0s 0.3s;
+
+            &::before,
+            &::after {
+                transition-duration: 0.3s, 0.3s;
+	            transition-delay: 0.3s, 0s;
+            }
+
+            &::before {
+                transition-property: top, transform;
+            }
+
+            &::after {
+                transition-property: bottom, transform; 
+            }
+        }
+        &.active {
+            span {
+                background: transparent;
+
+                &::before {
+                    top: 0;
+                    transform: rotate(-45deg);
+                    background: $burgerCloseColor;
+                }
+
+                &::after {
+                    bottom: 0;
+                    transform: rotate(45deg);
+                    background: $burgerCloseColor;
+                }
+
+                &::before,
+                &::after {
+                    transition-delay: 0s, 0.3s; 
+                }
+            }
+        }
+    }
+}
