@@ -1,10 +1,10 @@
 //1 - TOOLS
 @import '1-tools/_normalize'; 
 //font awesome
-// @import '1-tools/fontawesome/fontawesome';
-// @import '1-tools/fontawesome/solid';
-// @import '1-tools/fontawesome/brands';
-// @import '1-tools/fontawesome/regular';
+@import '1-tools/fontawesome/_fontawesome';
+@import '1-tools/fontawesome/_solid';
+@import '1-tools/fontawesome/_brands';
+@import '1-tools/fontawesome/_regular';
 
 //2 - HELPERS
 @import '2-helpers/_variables';
@@ -20,6 +20,7 @@
 //5 - MODULES
 @import '5-componets/full-screen';
 @import '5-componets/logo/logo';
+@import '5-componets/social-media/social-media';
 //6 - PAGE 
 @import '6-page/_index';
 
