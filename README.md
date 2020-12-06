@@ -3,20 +3,21 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# SaasOne — Creative Agency, Corporate and Portfolio Multi-purpose Template
+# Coming soon
 ### personal website project
 
 This project is for educational porpuses only.
 
 Site published at https://gurar.github.io/SaasOne---Creative-Agency/dist/
 
-Design: [Saas-one](https://altrcloud.ru/saasone/index-two)
+Design: [Matrox coming soon](https://cdn.discordapp.com/attachments/648536139677958156/651479019476221953/coming-soon-wide.png)
 
 ## Project features
 - responsive design
 - repetitive content is generated/rendered;
-- multi-page
-- no AJAX
+- css animations
+- form validations
+- no AJAX (data sending)
 
 ## Authors
 [Jezy](https://github.com/Gurar)
